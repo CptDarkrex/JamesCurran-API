@@ -15,7 +15,7 @@ import requests
 import json
 
 payload = {"name": "klarps"}
-response = requests.post('https://8gx25z-5000.csb.app/v1/chat/currency)', json=payload)
+response = requests.post('https://8gx25z-5000.csb.app/v1/chat/currency', json=payload)
 print(response.text)
 ```
 ## Add Items
