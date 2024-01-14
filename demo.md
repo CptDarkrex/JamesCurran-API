@@ -23,7 +23,7 @@ print(response.text)
 import requests
 import json
 
-payload = {"name": "klarps", "item": "sword}
+payload = {"name": "klarps", "item": {"name": "sword", "item_info": "info"}}
 response = requests.post('https://8gx25z-5000.csb.app/v1/chat/items', json=payload)
 print(response.text)
 ```
