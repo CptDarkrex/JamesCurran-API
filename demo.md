@@ -3,7 +3,7 @@
 import requests
 import json
 
-payload = {"name": "klarps", "reward": 3, "task": "add reward"}
+payload = {"name": "klarps", "reward": 3}
 response = requests.post('https://8gx25z-5000.csb.app/rewards', json=payload)
 print(response.text)
 
