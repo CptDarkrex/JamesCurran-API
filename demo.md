@@ -36,12 +36,3 @@ payload = {"name": "klarps", "reward": 500, "score": 500, "game": "Game"}
 response = requests.post('https://8gx25z-5000.csb.app/v1/chat/gamewin', json=payload)
 print(response.text)
 ```
-## Get Item in Shop
-```
-import requests
-import json
-
-payload = {"name": {"url": "url", "price": 500}}
-response = requests.post('https://store.ncss.cloud/group2/shop', json=payload)
-print(response.text)
-```
