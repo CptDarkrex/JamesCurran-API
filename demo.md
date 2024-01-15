@@ -45,4 +45,13 @@ payload = {"game": "TicaTacToe"}
 response = requests.post('https://8gx25z-5000.csb.app/v1/get/scoreboard', json=payload)
 print(response.text)
 ```
+## Add Item to Shop
+```
+import requests
+
+item = requests.get("https://store.ncss.cloud/group2/shop").json()
+attributes = {"url": "", "price": 500}
+item["wallpaper"] = attributes
+requests.post("https://store.ncss.cloud/group2/shop", json=item)
+```
 
